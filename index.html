@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shri Hanuman Mandir | Bhikeshwar, Nagbhir</title>
+<meta name="description" content="Shri Hanuman Mandir, Bhikeshwar, Nagbhir, Maharashtra - Puja timings, calendar, Panchang, gallery, members, location and contact.">
+<style>
+:root{--saffron:#d97706;--deep:#7c2d12;--cream:#fffaf0;--gold:#f59e0b;--text:#292524;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--cream);line-height:1.6}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #ead8bd}
+.nav{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:12px 18px;gap:15px}
+.logo{font-weight:800;color:var(--deep);font-size:1.05rem}.logo small{display:block;font-weight:500;color:#78716c}
+nav{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}nav a{color:#44403c;text-decoration:none;font-size:.9rem;font-weight:600}
+select{padding:8px;border:1px solid #d6c3a5;border-radius:8px;background:#fff}
+.hero{min-height:520px;background:linear-gradient(90deg,rgba(67,20,7,.85),rgba(67,20,7,.25)),url('https://images.unsplash.com/photo-1604608672516-f1b9f8d6f2b8?auto=format&fit=crop&w=1800&q=80') center/cover;display:flex;align-items:center}
+.hero-content{max-width:1200px;margin:auto;width:100%;padding:55px 20px;color:#fff}.hero h1{font-size:clamp(2.2rem,6vw,4.5rem);margin:8px 0}.hero p{font-size:1.15rem}.om{font-size:2rem}
+.btn{display:inline-block;background:var(--gold);color:#3b1a05;text-decoration:none;padding:11px 18px;border-radius:9px;font-weight:800;margin:6px 5px 0 0;border:0;cursor:pointer}.btn.alt{background:#fff}
+.container{max-width:1200px;margin:auto;padding:55px 20px}.section-title{text-align:center;color:var(--deep);font-size:2rem;margin:0 0 8px}.lead{text-align:center;color:#57534e;margin:0 auto 28px;max-width:750px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #ead8bd;border-radius:15px;padding:22px;box-shadow:0 5px 18px rgba(90,50,10,.06)}.card h3{color:var(--deep);margin-top:0}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden}th,td{padding:12px;border-bottom:1px solid #eee;text-align:left}th{background:#fff0d5;color:var(--deep)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery img{width:100%;height:190px;object-fit:cover;border-radius:12px;background:#f2e6d5}
+.notice{background:#fff0d5;border-left:5px solid var(--saffron);padding:15px;border-radius:8px;margin-bottom:20px}
+.map{width:100%;height:330px;border:0;border-radius:14px;background:#eee}
+footer{background:#431407;color:#fff;text-align:center;padding:35px 20px}.muted{color:#78716c}.pill{display:inline-block;background:#fff0d5;padding:5px 10px;border-radius:20px;margin:3px}
+form{display:grid;gap:12px}input,textarea{width:100%;padding:12px;border:1px solid #d6c3a5;border-radius:8px;font:inherit}textarea{min-height:120px}
+.admin-note{font-size:.9rem;background:#f5f5f4;padding:15px;border-radius:10px}
+@media(max-width:850px){.grid{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.nav{flex-wrap:wrap}nav{order:3;width:100%}}
+@media(max-width:560px){.grid,.gallery{grid-template-columns:1fr}.hero{min-height:470px}.container{padding:40px 15px}nav{gap:8px}nav a{font-size:.78rem}}
+</style>
+</head>
+<body>
+
+
+<!-- Sita-Ram Bhajan Background Music -->
+<audio id="bhajanAudio" loop preload="auto">
+  <!-- Put your licensed/temple-approved MP3 named "sitaram-bhajan.mp3"
+       in the same folder as this HTML file. -->
+  <source src="sitaram-bhajan.mp3" type="audio/mpeg">
+</audio>
+
+<div id="bhajanControl" style="position:fixed;right:16px;bottom:18px;z-index:50;background:#fff;border:1px solid #ead8bd;border-radius:14px;padding:10px 12px;box-shadow:0 8px 25px rgba(0,0,0,.15);display:flex;align-items:center;gap:9px">
+  <button id="bhajanBtn" class="btn" style="margin:0;padding:8px 12px" type="button">🔇 Play Sitaram Bhajan</button>
+  <span id="bhajanStatus" style="font-size:.78rem;color:#57534e">Music off</span>
+</div>
+
+<header>
+<div class="nav">
+<div class="logo">🛕 <span data-i18n="site">श्री हनुमान मंदिर</span><small>Bhikeshwar, Nagbhir, Maharashtra</small></div>
+<nav>
+<a href="#home" data-i18n="home">Home</a><a href="#about" data-i18n="about">About</a><a href="#puja" data-i18n="puja">Puja</a><a href="#calendar" data-i18n="calendar">Calendar</a><a href="#panchang" data-i18n="panchang">Panchang</a><a href="#gallery" data-i18n="gallery">Gallery</a><a href="#members" data-i18n="members">Members</a><a href="#location" data-i18n="location">Location</a><a href="#contact" data-i18n="contact">Contact</a>
+</nav>
+<label>🌐 <select id="language" aria-label="Language"><option value="mr">मराठी</option><option value="te">తెలుగు</option><option value="hi">हिन्दी</option><option value="en">English</option></select></label>
+</div>
+</header>
+
+<section id="home" class="hero">
+<div class="hero-content">
+<div class="om">॥ श्री हनुमते नमः ॥</div>
+<h1 data-i18n="heroTitle">Shri Hanuman Mandir</h1>
+<p data-i18n="heroSub">Bhikeshwar, Nagbhir, Maharashtra</p>
+<a class="btn" href="#puja" data-i18n="todayPuja">🙏 Today's Puja</a>
+<a class="btn alt" href="#location" data-i18n="reach">📍 How to Reach</a>
+<a class="btn alt" href="#calendar" data-i18n="events">📅 Upcoming Events</a>
+</div>
+</section>
+
+<section class="container">
+<div class="notice">🔔 <strong data-i18n="announcement">Announcement:</strong> <span data-i18n="announcementText">Temple committee can update this message whenever required.</span></div>
+<div class="grid">
+<div class="card"><h3>🙏 <span data-i18n="quickPuja">Daily Puja</span></h3><p data-i18n="quickPujaText">View daily puja and aarti timings.</p><a class="btn" href="#puja" data-i18n="view">View</a></div>
+<div class="card"><h3>☀️ <span data-i18n="quickPanchang">Today's Panchang</span></h3><p data-i18n="quickPanchangText">Daily tithi, nakshatra, sunrise and auspicious timings.</p><a class="btn" href="#panchang" data-i18n="view">View</a></div>
+<div class="card"><h3>📸 <span data-i18n="quickGallery">Temple Gallery</span></h3><p data-i18n="quickGalleryText">Temple, festivals, puja and development photos.</p><a class="btn" href="#gallery" data-i18n="view">View</a></div>
+</div>
+
+<div class="card" style="margin-top:18px">
+  <h3>🎵 Sita-Ram Bhajan</h3>
+  <p>Place your temple-approved/licensed <strong>sitaram-bhajan.mp3</strong> file in the same folder as this website. The website will attempt to play it automatically and provides a music button if the browser blocks autoplay.</p>
+</div>
+
+</section>
+
+<section id="about" class="container">
+<h2 class="section-title" data-i18n="aboutTitle">About the Temple</h2>
+<p class="lead" data-i18n="aboutLead">This section can contain the history, traditions, religious importance and development story of Shri Hanuman Mandir, Bhikeshwar.</p>
+<div class="card"><p data-i18n="aboutText">Add the verified temple history here. The content can later be maintained in Marathi, Telugu, Hindi and English by the temple committee.</p></div>
+</section>
+
+<section id="puja" class="container">
+<h2 class="section-title" data-i18n="pujaTitle">Daily Puja & Archana Timings</h2>
+<p class="lead" data-i18n="sampleNote">Sample timings are shown below. Replace them with the official temple timings.</p>
+<table><thead><tr><th data-i18n="activity">Puja / Activity</th><th data-i18n="time">Time</th></tr></thead><tbody>
+<tr><td data-i18n="kakad">Kakad Aarti</td><td>5:30 AM</td></tr>
+<tr><td data-i18n="abhishek">Abhishek</td><td>7:00 AM</td></tr>
+<tr><td data-i18n="morningAarti">Morning Aarti</td><td>8:00 AM</td></tr>
+<tr><td data-i18n="chalisa">Hanuman Chalisa</td><td>12:00 PM</td></tr>
+<tr><td data-i18n="eveningAarti">Evening Aarti</td><td>7:00 PM</td></tr>
+<tr><td data-i18n="shej">Shej Aarti</td><td>9:00 PM</td></tr>
+</tbody></table>
+</section>
+
+<section id="calendar" class="container">
+<h2 class="section-title" data-i18n="calendarTitle">Monthly Puja Calendar</h2>
+<p class="lead" data-i18n="calendarLead">The committee can add special puja, festivals, bhajans and other events here.</p>
+<div class="grid">
+<div class="card"><h3>📅 <span data-i18n="event1">Special Hanuman Puja</span></h3><p>Tuesday • 7:00 AM</p></div>
+<div class="card"><h3>🪔 <span data-i18n="event2">Sundarkand</span></h3><p>Saturday • 6:00 PM</p></div>
+<div class="card"><h3>🎶 <span data-i18n="event3">Bhajan Sandhya</span></h3><p>Sunday • 7:00 PM</p></div>
+</div>
+</section>
+
+<section id="panchang" class="container">
+<h2 class="section-title" data-i18n="panchangTitle">☀️ Daily Panchang</h2>
+<p class="lead" data-i18n="panchangLead">Live Panchang for Bhikeshwar using a free Panchang service. Data refreshes automatically each day.</p>
+
+<div id="panchangLoading" class="notice">☀️ Loading today's Panchang…</div>
+<div id="panchangError" class="notice" style="display:none"></div>
+
+<div id="panchangData" style="display:none">
+<div class="grid">
+  <div class="card"><h3>📅 <span data-i18n="date">Date</span></h3><p id="pDate">—</p></div>
+  <div class="card"><h3>🌅 <span data-i18n="sunrise">Sunrise</span></h3><p id="pSunrise">—</p></div>
+  <div class="card"><h3>🌇 <span data-i18n="sunset">Sunset</span></h3><p id="pSunset">—</p></div>
+  <div class="card"><h3>🪷 <span data-i18n="tithi">Tithi</span></h3><p id="pTithi">—</p></div>
+  <div class="card"><h3>⭐ <span data-i18n="nakshatra">Nakshatra</span></h3><p id="pNakshatra">—</p></div>
+  <div class="card"><h3>☀️ <span data-i18n="yoga">Yoga</span></h3><p id="pYoga">—</p></div>
+  <div class="card"><h3>🔱 <span data-i18n="karana">Karana</span></h3><p id="pKarana">—</p></div>
+  <div class="card"><h3>🕉️ <span data-i18n="rahu">Rahu Kaal</span></h3><p id="pRahu">—</p></div>
+</div>
+
+<div class="card" style="margin-top:18px">
+<h3>⏰ <span data-i18n="hourly">Hourly Panchang</span></h3>
+<p id="pHourly" data-i18n="hourlyText">Location-based hourly information can be added here.</p>
+</div>
+
+<p class="muted" style="margin-top:18px;font-size:.85rem">
+Panchang data by <a href="https://nityapanchangam.com" target="_blank" rel="noopener">Nitya Panchangam</a> • Free API under CC-BY 4.0. Attribution is retained.
+</p>
+</div>
+</section>
+
+<section id="gallery" class="container">
+<h2 class="section-title" data-i18n="galleryTitle">📸 Temple Gallery</h2>
+<p class="lead" data-i18n="galleryLead">These are replaceable photo placeholders. The final version can have an admin upload system.</p>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80" alt="Temple placeholder">
+<img src="https://images.unsplash.com/photo-1604608672516-f1b9f8d6f2b8?auto=format&fit=crop&w=800&q=80" alt="Temple placeholder">
+<img src="https://images.unsplash.com/photo-1577083552431-6e5fd01988a5?auto=format&fit=crop&w=800&q=80" alt="Festival placeholder">
+<img src="https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?auto=format&fit=crop&w=800&q=80" alt="Festival placeholder">
+</div>
+</section>
+
+<section id="members" class="container">
+<h2 class="section-title" data-i18n="membersTitle">👥 Members & Development Supporters</h2>
+<p class="lead" data-i18n="membersLead">Names can be maintained by the committee. Phone numbers and donation amounts should only be displayed with permission.</p>
+<table><thead><tr><th>#</th><th data-i18n="name">Name</th><th data-i18n="village">Village</th><th data-i18n="role">Role</th></tr></thead><tbody>
+<tr><td>1</td><td>Member Name</td><td>Bhikeshwar</td><td data-i18n="development">Development Support</td></tr>
+<tr><td>2</td><td>Member Name</td><td>Nagbhir</td><td data-i18n="volunteer">Volunteer</td></tr>
+<tr><td>3</td><td>Member Name</td><td>—</td><td data-i18n="donor">Donor</td></tr>
+</tbody></table>
+<div class="card" style="margin-top:18px"><h3 data-i18n="donationTitle">🙏 Support Temple Development</h3><p data-i18n="donationText">Add official UPI QR code, UPI ID and bank details here after verification by the temple committee.</p></div>
+</section>
+
+<section id="location" class="container">
+<h2 class="section-title" data-i18n="locationTitle">📍 How to Reach</h2>
+<p class="lead"><strong>Shri Hanuman Mandir</strong><br>Bhikeshwar, Nagbhir, Maharashtra</p>
+<div class="card">
+<p data-i18n="mapNote">Replace the map below with the confirmed Google Maps location of this exact temple before publishing.</p>
+<iframe class="map" src="https://www.google.com/maps?q=Bhikeshwar,Nagbhir,Maharashtra&output=embed" loading="lazy" title="Map"></iframe>
+<br><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Hanuman+Mandir+Bhikeshwar+Nagbhir+Maharashtra" target="_blank" rel="noopener" data-i18n="directions">📍 Open Directions</a>
+</div>
+</section>
+
+<section id="contact" class="container">
+<h2 class="section-title" data-i18n="contactTitle">📞 Contact Us</h2>
+<p class="lead" data-i18n="contactLead">Add the official temple committee phone number, WhatsApp number and email here.</p>
+<div class="grid">
+<div class="card"><h3>📞 <span data-i18n="phone">Phone</span></h3><p>+91 XXXXX XXXXX</p><a class="btn" href="tel:+91XXXXXXXXXX" data-i18n="call">Call</a></div>
+<div class="card"><h3>💬 WhatsApp</h3><p>+91 XXXXX XXXXX</p><a class="btn" href="#" data-i18n="whatsapp">WhatsApp</a></div>
+<div class="card"><h3>✉️ Email</h3><p>info@example.com</p></div>
+</div>
+<div class="card" style="margin-top:18px">
+<h3 data-i18n="message">Send a Message</h3>
+<form onsubmit="event.preventDefault(); alert('Connect this form to email/WhatsApp/backend in the production version.');">
+<input placeholder="Name" data-ph="namePh"><input placeholder="Mobile Number" data-ph="mobilePh"><textarea placeholder="Message" data-ph="messagePh"></textarea><button class="btn" type="submit" data-i18n="send">Send Message</button>
+</form>
+</div>
+</section>
+
+<footer>
+<div class="om">॥ श्री हनुमते नमः ॥</div>
+<p>🛕 <span data-i18n="site">Shri Hanuman Mandir</span> • Bhikeshwar, Nagbhir, Maharashtra</p>
+<p data-i18n="footer">जय श्री राम • जय हनुमान</p>
+</footer>
+
+<script>
+const T={
+en:{site:"Shri Hanuman Mandir",home:"Home",about:"About",puja:"Puja",calendar:"Calendar",panchang:"Panchang",gallery:"Gallery",members:"Members",location:"Location",contact:"Contact",heroTitle:"Shri Hanuman Mandir",heroSub:"Bhikeshwar, Nagbhir, Maharashtra",todayPuja:"🙏 Today's Puja",reach:"📍 How to Reach",events:"📅 Upcoming Events",announcement:"Announcement:",announcementText:"Temple committee can update this message whenever required.",quickPuja:"Daily Puja",quickPujaText:"View daily puja and aarti timings.",quickPanchang:"Today's Panchang",quickPanchangText:"Daily tithi, nakshatra, sunrise and auspicious timings.",quickGallery:"Temple Gallery",quickGalleryText:"Temple, festivals, puja and development photos.",view:"View",aboutTitle:"About the Temple",aboutLead:"This section can contain the history, traditions, religious importance and development story of Shri Hanuman Mandir, Bhikeshwar.",aboutText:"Add the verified temple history here. The content can later be maintained in Marathi, Telugu, Hindi and English by the temple committee.",pujaTitle:"Daily Puja & Archana Timings",sampleNote:"Sample timings are shown below. Replace them with the official temple timings.",activity:"Puja / Activity",time:"Time",kakad:"Kakad Aarti",abhishek:"Abhishek",morningAarti:"Morning Aarti",chalisa:"Hanuman Chalisa",eveningAarti:"Evening Aarti",shej:"Shej Aarti",calendarTitle:"Monthly Puja Calendar",calendarLead:"The committee can add special puja, festivals, bhajans and other events here.",event1:"Special Hanuman Puja",event2:"Sundarkand",event3:"Bhajan Sandhya",panchangTitle:"☀️ Daily Panchang",yoga:"Yoga",karana:"Karana",panchangLead:"For production use, connect this section to a reliable Panchang API for Bhikeshwar's exact date and location.",date:"Date",sunrise:"Sunrise",sunset:"Sunset",tithi:"Tithi",nakshatra:"Nakshatra",rahu:"Rahu Kaal",apiValue:"Automatic Panchang data",hourly:"Hourly Panchang",hourlyText:"5 AM → 6 AM → 7 AM → 8 AM → ... → 11 PM. The live version can display location-based hourly muhurat and Panchang information.",galleryTitle:"📸 Temple Gallery",galleryLead:"These are replaceable photo placeholders. The final version can have an admin upload system.",membersTitle:"👥 Members & Development Supporters",membersLead:"Names can be maintained by the committee. Phone numbers and donation amounts should only be displayed with permission.",name:"Name",village:"Village",role:"Role",development:"Development Support",volunteer:"Volunteer",donor:"Donor",donationTitle:"🙏 Support Temple Development",donationText:"Add official UPI QR code, UPI ID and bank details here after verification by the temple committee.",locationTitle:"📍 How to Reach",mapNote:"Replace the map below with the confirmed Google Maps location of this exact temple before publishing.",directions:"📍 Open Directions",contactTitle:"📞 Contact Us",contactLead:"Add the official temple committee phone number, WhatsApp number and email here.",phone:"Phone",call:"Call",whatsapp:"WhatsApp",message:"Send a Message",send:"Send Message",footer:"जय श्री राम • जय हनुमान",namePh:"Name",mobilePh:"Mobile Number",messagePh:"Message"},
+mr:{site:"श्री हनुमान मंदिर",home:"मुख्यपृष्ठ",about:"मंदिराबद्दल",puja:"पूजा",calendar:"पंचांग / कॅलेंडर",panchang:"दैनिक पंचांग",gallery:"फोटो गॅलरी",members:"सदस्य",location:"मार्ग",contact:"संपर्क",heroTitle:"श्री हनुमान मंदिर",heroSub:"भिकेश्वर, नागभीर, महाराष्ट्र",todayPuja:"🙏 आजची पूजा",reach:"📍 मंदिरापर्यंत कसे पोहोचाल",events:"📅 आगामी कार्यक्रम",announcement:"सूचना:",announcementText:"ही सूचना मंदिर समिती आवश्यकतेनुसार बदलू शकते.",quickPuja:"दैनिक पूजा",quickPujaText:"दैनिक पूजा आणि आरतीच्या वेळा पहा.",quickPanchang:"आजचे पंचांग",quickPanchangText:"तिथी, नक्षत्र, सूर्योदय आणि शुभ वेळा.",quickGallery:"मंदिर फोटो गॅलरी",quickGalleryText:"मंदिर, उत्सव, पूजा आणि विकासकामांचे फोटो.",view:"पहा",aboutTitle:"मंदिराबद्दल",aboutLead:"येथे मंदिराचा इतिहास, परंपरा, धार्मिक महत्त्व आणि विकासाची माहिती दिली जाऊ शकते.",aboutText:"अधिकृत मंदिर इतिहास येथे जोडा. समिती मराठी, तेलुगू, हिंदी आणि इंग्रजीमध्ये माहिती अद्ययावत करू शकते.",pujaTitle:"दैनिक पूजा व अर्चना वेळा",sampleNote:"खाली नमुना वेळा आहेत. अधिकृत मंदिर वेळेनुसार त्या बदला.",activity:"पूजा / कार्यक्रम",time:"वेळ",kakad:"काकड आरती",abhishek:"अभिषेक",morningAarti:"सकाळची आरती",chalisa:"हनुमान चालीसा",eveningAarti:"संध्याकाळची आरती",shej:"शेज आरती",calendarTitle:"मासिक पूजा कॅलेंडर",calendarLead:"विशेष पूजा, उत्सव, भजन आणि इतर कार्यक्रम येथे जोडता येतील.",event1:"विशेष हनुमान पूजा",event2:"सुंदरकांड",event3:"भजन संध्या",panchangTitle:"☀️ दैनिक पंचांग",yoga:"योग",karana:"करण",panchangLead:"अचूक स्थानासाठी विश्वसनीय पंचांग API जोडून दैनिक माहिती स्वयंचलित करता येईल.",date:"दिनांक",sunrise:"सूर्योदय",sunset:"सूर्यास्त",tithi:"तिथी",nakshatra:"नक्षत्र",rahu:"राहुकाळ",apiValue:"स्वयंचलित पंचांग माहिती",hourly:"तासानुसार पंचांग",hourlyText:"सकाळी ५ → ६ → ७ → ८ ... रात्री ११. अंतिम वेबसाइटमध्ये तासानुसार शुभ-अशुभ वेळा दाखवता येतील.",galleryTitle:"📸 मंदिर फोटो गॅलरी",galleryLead:"हे बदलता येणारे फोटो नमुने आहेत. अंतिम वेबसाइटमध्ये फोटो अपलोड सुविधा असेल.",membersTitle:"👥 सदस्य व मंदिर विकासासाठी सहकारी",membersLead:"समिती सदस्यांची नावे अद्ययावत करू शकते. फोन नंबर आणि देणगीची रक्कम परवानगीनेच दाखवावी.",name:"नाव",village:"गाव",role:"भूमिका",development:"विकासासाठी सहकार्य",volunteer:"स्वयंसेवक",donor:"देणगीदार",donationTitle:"🙏 मंदिर विकासासाठी योगदान",donationText:"समितीच्या पडताळणीनंतर अधिकृत UPI QR, UPI ID आणि बँक तपशील येथे जोडा.",locationTitle:"📍 मंदिरापर्यंत कसे पोहोचाल",mapNote:"प्रकाशित करण्यापूर्वी या नकाशावर या मंदिराचे अचूक Google Maps स्थान निश्चित करा.",directions:"📍 मार्ग उघडा",contactTitle:"📞 संपर्क करा",contactLead:"अधिकृत फोन, WhatsApp आणि ईमेल येथे जोडा.",phone:"फोन",call:"कॉल करा",whatsapp:"WhatsApp",message:"संदेश पाठवा",send:"संदेश पाठवा",footer:"जय श्री राम • जय हनुमान",namePh:"नाव",mobilePh:"मोबाईल नंबर",messagePh:"संदेश"},
+hi:{site:"श्री हनुमान मंदिर",home:"मुख्य पृष्ठ",about:"मंदिर के बारे में",puja:"पूजा",calendar:"पूजा कैलेंडर",panchang:"दैनिक पंचांग",gallery:"गैलरी",members:"सदस्य",location:"स्थान",contact:"संपर्क",heroTitle:"श्री हनुमान मंदिर",heroSub:"भिकेश्वर, नागभीर, महाराष्ट्र",todayPuja:"🙏 आज की पूजा",reach:"📍 मंदिर तक कैसे पहुँचें",events:"📅 आगामी कार्यक्रम",announcement:"सूचना:",announcementText:"मंदिर समिति इस संदेश को आवश्यकता के अनुसार बदल सकती है।",quickPuja:"दैनिक पूजा",quickPujaText:"दैनिक पूजा और आरती का समय देखें।",quickPanchang:"आज का पंचांग",quickPanchangText:"तिथि, नक्षत्र, सूर्योदय और शुभ समय।",quickGallery:"मंदिर गैलरी",quickGalleryText:"मंदिर, उत्सव, पूजा और विकास कार्यों की तस्वीरें।",view:"देखें",aboutTitle:"मंदिर के बारे में",aboutLead:"यहाँ मंदिर का इतिहास, परंपराएँ, धार्मिक महत्व और विकास की जानकारी दी जा सकती है।",aboutText:"सत्यापित मंदिर इतिहास यहाँ जोड़ें। समिति मराठी, तेलुगु, हिंदी और अंग्रेज़ी में जानकारी रख सकती है।",pujaTitle:"दैनिक पूजा एवं अर्चना समय",sampleNote:"नीचे नमूना समय हैं। इन्हें मंदिर के आधिकारिक समय से बदलें।",activity:"पूजा / कार्यक्रम",time:"समय",kakad:"काकड़ आरती",abhishek:"अभिषेक",morningAarti:"सुबह की आरती",chalisa:"हनुमान चालीसा",eveningAarti:"संध्या आरती",shej:"शेज आरती",calendarTitle:"मासिक पूजा कैलेंडर",calendarLead:"विशेष पूजा, त्योहार, भजन और अन्य कार्यक्रम यहाँ जोड़े जा सकते हैं।",event1:"विशेष हनुमान पूजा",event2:"सुंदरकांड",event3:"भजन संध्या",panchangTitle:"☀️ दैनिक पंचांग",yoga:"योग",karana:"करण",panchangLead:"सटीक स्थान और तारीख के लिए विश्वसनीय पंचांग API जोड़ा जा सकता है।",date:"दिनांक",sunrise:"सूर्योदय",sunset:"सूर्यास्त",tithi:"तिथि",nakshatra:"नक्षत्र",rahu:"राहुकाल",apiValue:"स्वचालित पंचांग जानकारी",hourly:"घंटे के अनुसार पंचांग",hourlyText:"सुबह 5 → 6 → 7 → 8 ... रात 11 बजे। अंतिम वेबसाइट में घंटे के अनुसार मुहूर्त और पंचांग दिखाया जा सकता है।",galleryTitle:"📸 मंदिर फोटो गैलरी",galleryLead:"ये बदलने योग्य फोटो नमूने हैं। अंतिम वेबसाइट में फोटो अपलोड सुविधा हो सकती है।",membersTitle:"👥 सदस्य एवं मंदिर विकास सहयोगी",membersLead:"समिति नाम अपडेट कर सकती है। फोन नंबर और दान राशि अनुमति से ही दिखाएँ।",name:"नाम",village:"गाँव",role:"भूमिका",development:"विकास सहयोग",volunteer:"स्वयंसेवक",donor:"दाता",donationTitle:"🙏 मंदिर विकास में सहयोग",donationText:"समिति द्वारा सत्यापन के बाद आधिकारिक UPI QR, UPI ID और बैंक विवरण जोड़ें।",locationTitle:"📍 मंदिर तक कैसे पहुँचें",mapNote:"प्रकाशित करने से पहले इस मंदिर का सही Google Maps स्थान सुनिश्चित करें।",directions:"📍 दिशा खोलें",contactTitle:"📞 संपर्क करें",contactLead:"आधिकारिक फोन, WhatsApp और ईमेल यहाँ जोड़ें।",phone:"फोन",call:"कॉल करें",whatsapp:"WhatsApp",message:"संदेश भेजें",send:"संदेश भेजें",footer:"जय श्री राम • जय हनुमान",namePh:"नाम",mobilePh:"मोबाइल नंबर",messagePh:"संदेश"},
+te:{site:"శ్రీ హనుమాన్ మందిర్",home:"హోమ్",about:"మందిరం గురించి",puja:"పూజ",calendar:"పూజ క్యాలెండర్",panchang:"దైనందిన పంచాంగం",gallery:"గ్యాలరీ",members:"సభ్యులు",location:"స్థానం",contact:"సంప్రదించండి",heroTitle:"శ్రీ హనుమాన్ మందిర్",heroSub:"భికేశ్వర్, నాగ్భీర్, మహారాష్ట్ర",todayPuja:"🙏 నేటి పూజ",reach:"📍 ఆలయానికి ఎలా చేరుకోవాలి",events:"📅 రాబోయే కార్యక్రమాలు",announcement:"ప్రకటన:",announcementText:"ఆలయ కమిటీ అవసరమైనప్పుడు ఈ సందేశాన్ని మార్చవచ్చు.",quickPuja:"దైనందిన పూజ",quickPujaText:"రోజువారీ పూజ మరియు హారతి సమయాలు.",quickPanchang:"నేటి పంచాంగం",quickPanchangText:"తిథి, నక్షత్రం, సూర్యోదయం మరియు శుభ సమయాలు.",quickGallery:"ఆలయ గ్యాలరీ",quickGalleryText:"ఆలయం, పండుగలు, పూజ మరియు అభివృద్ధి ఫోటోలు.",view:"చూడండి",aboutTitle:"ఆలయం గురించి",aboutLead:"ఇక్కడ ఆలయ చరిత్ర, సంప్రదాయాలు, ఆధ్యాత్మిక ప్రాముఖ్యత మరియు అభివృద్ధి వివరాలు ఇవ్వవచ్చు.",aboutText:"ధృవీకరించిన ఆలయ చరిత్రను ఇక్కడ చేర్చండి. కమిటీ మరాఠీ, తెలుగు, హిందీ మరియు ఇంగ్లీష్‌లో సమాచారాన్ని నిర్వహించవచ్చు.",pujaTitle:"దైనందిన పూజ & అర్చన సమయాలు",sampleNote:"క్రింది సమయాలు నమూనా మాత్రమే. అధికారిక ఆలయ సమయాలతో మార్చండి.",activity:"పూజ / కార్యక్రమం",time:"సమయం",kakad:"కాకడ్ హారతి",abhishek:"అభిషేకం",morningAarti:"ఉదయం హారతి",chalisa:"హనుమాన్ చాలీసా",eveningAarti:"సాయంత్రం హారతి",shej:"శేజ్ హారతి",calendarTitle:"నెలవారీ పూజ క్యాలెండర్",calendarLead:"ప్రత్యేక పూజలు, పండుగలు, భజనలు మరియు ఇతర కార్యక్రమాలను ఇక్కడ చేర్చవచ్చు.",event1:"ప్రత్యేక హనుమాన్ పూజ",event2:"సుందరకాండ",event3:"భజన సాయంత్రం",panchangTitle:"☀️ దైనందిన పంచాంగం",yoga:"యోగం",karana:"కరణం",panchangLead:"భికేశ్వర్‌కు ఖచ్చితమైన తేదీ మరియు స్థాన సమాచారం కోసం విశ్వసనీయ పంచాంగ APIని అనుసంధానించవచ్చు.",date:"తేదీ",sunrise:"సూర్యోదయం",sunset:"సూర్యాస్తమయం",tithi:"తిథి",nakshatra:"నక్షత్రం",rahu:"రాహుకాలం",apiValue:"ఆటోమేటిక్ పంచాంగ సమాచారం",hourly:"గంటల వారీ పంచాంగం",hourlyText:"ఉదయం 5 → 6 → 7 → 8 ... రాత్రి 11. తుది వెర్షన్‌లో గంటల వారీ ముహూర్తాలు మరియు పంచాంగ సమాచారం చూపవచ్చు.",galleryTitle:"📸 ఆలయ ఫోటో గ్యాలరీ",galleryLead:"ఇవి మార్చగల ఫోటో నమూనాలు. తుది వెర్షన్‌లో అడ్మిన్ ఫోటో అప్‌లోడ్ సౌకర్యం ఉంటుంది.",membersTitle:"👥 సభ్యులు & అభివృద్ధి సహాయకులు",membersLead:"కమిటీ పేర్లను నిర్వహించవచ్చు. ఫోన్ నంబర్లు మరియు విరాళాల మొత్తాలను అనుమతితో మాత్రమే చూపాలి.",name:"పేరు",village:"గ్రామం",role:"పాత్ర",development:"అభివృద్ధి సహాయం",volunteer:"స్వచ్ఛంద సేవకుడు",donor:"దాత",donationTitle:"🙏 ఆలయ అభివృద్ధికి సహకరించండి",donationText:"కమిటీ ధృవీకరణ తర్వాత అధికారిక UPI QR, UPI ID మరియు బ్యాంక్ వివరాలను ఇక్కడ చేర్చండి.",locationTitle:"📍 ఆలయానికి ఎలా చేరుకోవాలి",mapNote:"ప్రచురించే ముందు ఈ ఆలయానికి సరైన Google Maps స్థానాన్ని నిర్ధారించండి.",directions:"📍 దిశలను తెరవండి",contactTitle:"📞 మమ్మల్ని సంప్రదించండి",contactLead:"అధికారిక ఫోన్, WhatsApp మరియు ఇమెయిల్‌ను ఇక్కడ చేర్చండి.",phone:"ఫోన్",call:"కాల్ చేయండి",whatsapp:"WhatsApp",message:"సందేశం పంపండి",send:"సందేశం పంపండి",footer:"జై శ్రీ రామ్ • జై హనుమాన్",namePh:"పేరు",mobilePh:"మొబైల్ నంబర్",messagePh:"సందేశం"}
+};
+function applyLang(lang){
+ const t=T[lang]||T.en;
+ document.documentElement.lang=lang;
+ document.querySelectorAll("[data-i18n]").forEach(el=>{let k=el.dataset.i18n;if(t[k])el.textContent=t[k]});
+ document.querySelectorAll("[data-ph]").forEach(el=>{let k=el.dataset.ph;if(t[k])el.placeholder=t[k]});
+ localStorage.setItem("mandirLang",lang);
+}
+document.getElementById("language").addEventListener("change",e=>applyLang(e.target.value));
+const saved=localStorage.getItem("mandirLang")||"mr";document.getElementById("language").value=saved;applyLang(saved);
+document.getElementById("todayDate").textContent=new Date().toLocaleDateString(saved==="en"?"en-IN":saved+"-IN",{weekday:"long",year:"numeric",month:"long",day:"numeric"});
+
+// Background Sita-Ram bhajan.
+// Modern browsers often block audible autoplay until the visitor interacts with the page.
+// After the first click/tap, the bhajan starts and continues while browsing this page.
+const bhajan = document.getElementById("bhajanAudio");
+const bhajanBtn = document.getElementById("bhajanBtn");
+const bhajanStatus = document.getElementById("bhajanStatus");
+
+async function startBhajan(){
+  try{
+    await bhajan.play();
+    bhajanBtn.textContent = "🔊 Pause Sitaram Bhajan";
+    bhajanStatus.textContent = "Bhajan playing";
+  }catch(e){
+    bhajanBtn.textContent = "🔇 Play Sitaram Bhajan";
+    bhajanStatus.textContent = "Tap to start music";
+  }
+}
+function stopBhajan(){
+  bhajan.pause();
+  bhajanBtn.textContent = "🔇 Play Sitaram Bhajan";
+  bhajanStatus.textContent = "Music off";
+}
+bhajanBtn.addEventListener("click", ()=>{
+  if(bhajan.paused) startBhajan(); else stopBhajan();
+});
+
+// Try autoplay; if the browser blocks it, the visitor can tap once.
+window.addEventListener("load", startBhajan);
+
+// Start on the first user interaction if autoplay was blocked.
+["pointerdown","keydown","touchstart"].forEach(evt=>{
+  document.addEventListener(evt, ()=>{
+    if(bhajan.paused) startBhajan();
+  }, {once:true, passive:true});
+});
+
+// Keep music playing when moving between sections/pages within this single-page website.
+document.querySelectorAll('a[href^="#"]').forEach(link=>{
+  link.addEventListener("click", ()=>{
+    if(bhajan.paused) startBhajan();
+  });
+});
+
+
+// LIVE FREE PANCHANG
+// Bhikeshwar village coordinates: 20.58595 N, 79.71796 E.
+// Source: Nitya Panchangam free API (CC-BY 4.0), with attribution retained.
+async function loadLivePanchang(){
+  const loading = document.getElementById("panchangLoading");
+  const error = document.getElementById("panchangError");
+  const box = document.getElementById("panchangData");
+  try{
+    const now = new Date();
+    const yyyy = now.getFullYear();
+    const mm = String(now.getMonth()+1).padStart(2,"0");
+    const dd = String(now.getDate()).padStart(2,"0");
+    const url = `https://nityapanchangam.com/api/panchangam.php?date=${yyyy}-${mm}-${dd}&lat=20.58595&lng=79.71796`;
+    const response = await fetch(url);
+    if(!response.ok) throw new Error("Panchang service returned an error.");
+    const d = await response.json();
+
+    const textOf = (obj) => {
+      if(obj == null) return "—";
+      if(typeof obj === "string" || typeof obj === "number") return String(obj);
+      return obj.name || obj.value || obj.time || obj.start || obj.end || "—";
+    };
+    const timeOf = (obj) => {
+      if(obj == null) return "—";
+      if(typeof obj === "string" || typeof obj === "number") return String(obj);
+      if(obj.time) return String(obj.time);
+      if(obj.start && obj.end) return `${obj.start} – ${obj.end}`;
+      if(obj.start) return String(obj.start);
+      return textOf(obj);
+    };
+
+    document.getElementById("pDate").textContent = d.date || `${dd}-${mm}-${yyyy}`;
+    document.getElementById("pSunrise").textContent = timeOf(d.sunrise);
+    document.getElementById("pSunset").textContent = timeOf(d.sunset);
+    document.getElementById("pTithi").textContent = textOf(d.tithi);
+    document.getElementById("pNakshatra").textContent = textOf(d.nakshatra);
+    document.getElementById("pYoga").textContent = textOf(d.yoga);
+    document.getElementById("pKarana").textContent = textOf(d.karana);
+    document.getElementById("pRahu").textContent = timeOf(d.rahu || d.rahukaal || d.rahu_kaal);
+
+    const hourlyParts = [];
+    if(d.choghadiya) hourlyParts.push("Choghadiya available");
+    if(d.muhurat) hourlyParts.push("Muhurat available");
+    if(d.yamagandam) hourlyParts.push(`Yamagandam: ${timeOf(d.yamagandam)}`);
+    if(d.gulika) hourlyParts.push(`Gulika: ${timeOf(d.gulika)}`);
+    document.getElementById("pHourly").textContent =
+      hourlyParts.length ? hourlyParts.join(" • ") :
+      "Daily Panchang is live. Additional hourly/muhurat fields depend on the API response.";
+
+    loading.style.display="none";
+    error.style.display="none";
+    box.style.display="block";
+  }catch(err){
+    loading.style.display="none";
+    error.style.display="block";
+    error.innerHTML = "⚠️ Panchang could not be loaded right now. Please refresh the page. The website will continue to work normally.";
+    console.warn("Panchang error:", err);
+  }
+}
+loadLivePanchang();
+
+</script>
+</body>
+</html>
